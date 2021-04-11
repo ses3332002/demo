@@ -1,4 +1,4 @@
-const helpMessage = document.querySelector('main h2');
+const helpMessage = document.querySelector('.info h2');
 const cellsForm = document.forms.cells;
 const pleyerInviteString = 'Ход игрока ';
 const pleyerHonorString = 'Выиграл игрок ';
@@ -113,10 +113,19 @@ function movesHandler(e) {
   }
 
   function startAgain() {
-    helpMessage.innerHTML += `<button class="proposal_button">${proposalString}</button>`;
+    helpMessage.insertAdjacentHTML(
+      'afterEnd',
+      `<button class="proposal_button">${proposalString}</button>`
+    );
     let proposalButton = document.querySelector('.proposal_button');
     proposalButton.focus();
-    proposalButton.addEventListener('click', initGamefield);
+    proposalButton.addEventListener('click', restartGame);
+
+    function restartGame() {
+      proposalButton.removeEventListener('click', restartGame);
+      proposalButton.remove();
+      initGamefield();
+    }
   }
 }
 

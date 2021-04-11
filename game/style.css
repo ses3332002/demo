@@ -66,17 +66,21 @@ main {
   color: #f4d75e;
 }
 
-main h2 {
+main .info {
+  height: 120px;
+}
+
+main .info h2 {
   margin-top: 40px;
   font-size: 28px;
   font-weight: bolder;
 }
 
-main .second_player_turn {
+main .info .second_player_turn {
   color: #e9723d;
 }
 
-main .proposal_button {
+main .info .proposal_button {
   display: block;
   margin: 20px auto;
   font-size: 18px;
@@ -87,23 +91,18 @@ main .proposal_button {
   border-radius: 4px;
 }
 
-main .proposal_button:hover {
+main .info .proposal_button:hover {
   cursor: pointer;
 }
 
-main .proposal_button:focus-visible {
+main .info .proposal_button:focus-visible {
   outline: 2px solid #f4d75e;
   z-index: 2;
   outline-offset: 5px;
 }
 
 .gamefield {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  text-align: center;
+  display: inline-block;
   max-width: 320px;
 }
 
