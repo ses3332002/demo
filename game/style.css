@@ -1,0 +1,210 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #7c7b89;
+  color: #f1e4de;
+}
+
+header {
+  height: 40px;
+  line-height: 40px;
+  font-size: 18px;
+  text-align: center;
+}
+
+main {
+  text-align: center;
+  color: #f4d75e;
+}
+
+main h2 {
+  margin-top: 40px;
+  font-size: 28px;
+  font-weight: bolder;
+}
+
+main .second_player_turn {
+  color: #e9723d;
+}
+
+main .proposal_button {
+  display: block;
+  margin: 20px auto;
+  font-size: 18px;
+  background-color: #f1e4de;
+  border: 2px solid #0b7fab;
+  color: #0b7fab;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+main .proposal_button:hover {
+  cursor: pointer;
+}
+
+main .proposal_button:focus-visible {
+  outline: 2px solid #f4d75e;
+  z-index: 2;
+  outline-offset: 5px;
+}
+
+.gamefield {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 320px;
+}
+
+.cells {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (100px)[3];
+      grid-template-columns: repeat(3, 100px);
+  -ms-grid-rows: (100px)[3];
+      grid-template-rows: repeat(3, 100px);
+  gap: 3px;
+  position: relative;
+}
+
+.cells::after {
+  position: absolute;
+  content: '';
+  top: 100px;
+  left: 0;
+  width: 306px;
+  height: 3px;
+  background-color: #0b7fab;
+  -webkit-box-shadow: 0 103px 0px #0b7fab;
+          box-shadow: 0 103px 0px #0b7fab;
+}
+
+.cells::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 100px;
+  width: 3px;
+  height: 306px;
+  background-color: #0b7fab;
+  -webkit-box-shadow: 103px 0 0px #0b7fab;
+          box-shadow: 103px 0 0px #0b7fab;
+}
+
+.cells input[type='checkbox'] {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.cells input[type='checkbox']:focus-visible + .cell {
+  outline: 2px solid #f1e4de;
+  z-index: 2;
+  outline-offset: -13px;
+}
+
+.cells .cell {
+  position: relative;
+}
+
+.cells .cell:hover {
+  cursor: pointer;
+}
+
+.cells input[type='checkbox']:disabled + .cell:hover {
+  cursor: initial;
+}
+
+.cells .checked_by_0::after {
+  position: absolute;
+  content: '';
+  top: 15px;
+  left: 15px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  border: 3px solid #e9723d;
+}
+
+.cells .checked_by_x::after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 77px;
+  height: 3px;
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+  background-color: #f4d75e;
+}
+
+.cells .checked_by_x::before {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 50%;
+  width: 77px;
+  height: 3px;
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: #f4d75e;
+}
