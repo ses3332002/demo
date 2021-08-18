@@ -18,9 +18,9 @@
     * Legacy code with jQuery and jQuery plugins;
     * Built with Gulp and Sass.
 
-    [Code base](https://github.com/ses3332002/goit/tree/master/demo/demo2)
+[Code base](https://github.com/ses3332002/goit/tree/master/demo/demo2)
 
-    [Demo](https://ses3332002.github.io/goit/demo/demo2/)
+[Demo](https://ses3332002.github.io/goit/demo/demo2/)
 
 </details>
 
@@ -33,8 +33,8 @@
 
     * Vanilla JS (ES6)
 
-    [Code base](https://github.com/ses3332002/demo/tree/main/game)
+[Code base](https://github.com/ses3332002/demo/tree/main/game)
 
-    [Demo](https://ses3332002.github.io/demo/game)
+[Demo](https://ses3332002.github.io/demo/game)
 
 </details>
