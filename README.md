@@ -24,6 +24,60 @@
 
 </details>
 
+## Legacy multipage site
+
+<details>
+  <summary>
+    <b>Legacy multipage site</b>
+  </summary>
+
+    * Adaptive layout for 3 screen resolutions (computer, tablet, smartphone);
+    * Responsive images;
+    * Image optimization for 2x Retina;
+    * Icon font for icons;
+    * Slider with support of touch screens;
+    * Dynamic loading weather and currency informers with an AJAX request from a third-party resources;
+    * Full set of favicons;
+    * Dark theme of browser / OS supporting;
+    * Legacy code with jQuery and jQuery plugins;
+    * Built with Gulp and Sass.
+
+[Code base](https://github.com/ses3332002/goit/tree/master/demo/demo3)
+
+[Demo](https://ses3332002.github.io/goit/demo/demo3/)
+
+</details>
+
+## Memory - Pair Game
+
+<details>
+  <summary>
+    <b>Memory - Pair Game</b>
+  </summary>
+
+      * Vanilla JS (ES6)
+
+[Demo](https://ses3332002.github.io/kottans-frontend/task_memory_pair_game/)
+
+[Code base](https://github.com/ses3332002/kottans-frontend/tree/main/task_memory_pair_game)
+
+</details>
+
+## Friends App
+
+<details>
+  <summary>
+    <b>Friends App</b>
+  </summary>
+
+      * Vanilla JS (ES6)
+
+[Demo](https://ses3332002.github.io/kottans-frontend/task_friends_app/)
+
+[Code base](https://github.com/ses3332002/kottans-frontend/tree/main/task_friends_app)
+
+</details>
+
 ## Tic tac toe game
 
 <details>
