@@ -34,7 +34,7 @@
     * Image optimization for 2x Retina;
     * Icon font for icons;
     * Slider with support of touch screens;
-    * Dynamic loading weather and currency informers with an AJAX request from a third-party resources;
+    * Dynamic loading weather and currency informers with an AJAX requests from a third-party resources;
     * Full set of favicons;
     * Dark theme of browser / OS supporting;
     * Legacy code with jQuery and jQuery plugins;
@@ -69,7 +69,7 @@
 
 <details>
   <summary>
-    <b>Memory - Pair Game</b>
+    <b>Memory - pair game</b>
   </summary>
 
     * Adaptive layout;
@@ -85,7 +85,7 @@
 
 <details>
   <summary>
-    <b>Friends App</b>
+    <b>Friends searching application</b>
   </summary>
 
       * Vanilla JS (ES6)
