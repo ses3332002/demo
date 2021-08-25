@@ -7,7 +7,7 @@
     <b>Legacy code landing</b>
   </summary>
 
-    * Adaptive layout for 3 screen resolutions (computer, tablet, smartphone);
+    * Adaptive layout for 3 screen resolutions (desktop, tablet, smartphone);
     * Responsive images;
     * Image optimization for 2x Retina;
     * Icon font for icons;
@@ -29,7 +29,7 @@
     <b>Multipage site</b>
   </summary>
 
-    * Adaptive layout for 3 screen resolutions (computer, tablet, smartphone);
+    * Adaptive layout for 3 screen resolutions (desktop, tablet, smartphone);
     * Responsive images;
     * Image optimization for 2x Retina;
     * Icon font for icons;
