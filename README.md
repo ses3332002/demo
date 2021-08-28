@@ -16,7 +16,7 @@
     * Dynamic loading of images for the gallery with an AJAX request from a third-party resource;
     * Full set of favicons;
     * Legacy code with jQuery and jQuery plugins;
-    * Built with Gulp and Sass.
+    * Built with Gulp.
 
 [Code base](https://github.com/ses3332002/goit/tree/master/demo/demo2)
 
@@ -36,9 +36,9 @@
     * Slider with support of touch screens;
     * Dynamic loading weather and currency informers with an AJAX requests from a third-party resources;
     * Full set of favicons;
-    * Dark theme of browser / OS supporting;
+    * Dark theme of browser/OS supporting;
     * Legacy code with jQuery and jQuery plugins;
-    * Built with Gulp and Sass.
+    * Built with Gulp.
 
 [Code base](https://github.com/ses3332002/goit/tree/master/demo/demo3)
 
@@ -59,7 +59,7 @@
     * Accessebility via keyboard;
     * Themes support by using of CSS variables;
     * Tiled layout with CSS columns;
-    * Built with Gulp and Sass.
+    * Built with Gulp.
 
 [Code base](https://github.com/ses3332002/goit/tree/master/demo/demo4)
 
@@ -88,11 +88,13 @@
     <b>Friends searching application</b>
   </summary>
 
+      * Adaptive layout;
       * Vanilla JS (ES6)
+      * Accessebility via keyboard;
 
-[Code base](https://github.com/ses3332002/kottans-frontend/tree/main/task_friends_app)
+[Code base](https://github.com/ses3332002/demo/tree/main/friends)
 
-[Demo](https://ses3332002.github.io/kottans-frontend/task_friends_app/)
+[Demo](https://ses3332002.github.io/demo/friends)
 
 </details>
 
