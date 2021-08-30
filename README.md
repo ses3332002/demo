@@ -89,8 +89,8 @@
   </summary>
 
       * Adaptive layout;
-      * Vanilla JS (ES6)
-      * Accessebility via keyboard;
+      * Vanilla JS (ES6);
+      * Accessebility via keyboard.
 
 [Code base](https://github.com/ses3332002/demo/tree/main/friends)
 
@@ -100,12 +100,13 @@
 
 <details>
   <summary>
-    <b>Tic tac toe game</b>
+    <b>Tic tac toe game (PWA)</b>
   </summary>
 
     * Adaptive layout;
     * Vanilla JS (ES6);
-    * Accessebility via keyboard.
+    * Accessebility via keyboard;
+    * Off-line working due to PWA.
 
 [Code base](https://github.com/ses3332002/demo/tree/main/game)
 
