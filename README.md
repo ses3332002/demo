@@ -69,13 +69,14 @@
 
 <details>
   <summary>
-    <b>Memory - pair game</b>
+    <b>Memory - pair game (PWA)</b>
   </summary>
 
     * Adaptive layout;
     * Vanilla JS (ES6);
     * Accessebility via keyboard;
-    * Themes support by using of CSS variables.
+    * Themes support by using of CSS variables;
+    * Off-line working due to PWA.
 
 [Code base](https://github.com/ses3332002/kottans-frontend/tree/main/task_memory_pair_game)
 

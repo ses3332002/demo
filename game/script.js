@@ -54,9 +54,7 @@ function initGamefield() {
 
 let avaiableCellsArray;
 function modalKeyHandler(e) {
-  avaiableCellsArray = [
-    ...document.querySelectorAll('input[type=checkbox]:not(:disabled)'),
-  ];
+  avaiableCellsArray = [...document.querySelectorAll('input[type=checkbox]:not(:disabled)')];
   if (e.key === 'Tab') {
     if (e.shiftKey) {
       if (document.activeElement === avaiableCellsArray[0]) {
@@ -64,10 +62,7 @@ function modalKeyHandler(e) {
         avaiableCellsArray[avaiableCellsArray.length - 1].focus();
       }
     } else {
-      if (
-        document.activeElement ===
-        avaiableCellsArray[avaiableCellsArray.length - 1]
-      ) {
+      if (document.activeElement === avaiableCellsArray[avaiableCellsArray.length - 1]) {
         e.preventDefault();
         avaiableCellsArray[0].focus();
       }
@@ -78,9 +73,7 @@ function modalKeyHandler(e) {
 function movesHandler(e) {
   let winSign;
   e.target.disabled = true;
-  avaiableCellsArray = [
-    ...document.querySelectorAll('input[type=checkbox]:not(:disabled)'),
-  ];
+  avaiableCellsArray = [...document.querySelectorAll('input[type=checkbox]:not(:disabled)')];
 
   if (presentPlayerIsFirst) {
     e.target.nextSibling.classList.add('checked_by_x');
@@ -93,7 +86,7 @@ function movesHandler(e) {
   }
   if (winSign) {
     helpMessage.innerHTML = prepareHelpMessage(true);
-    avaiableCellsArray.forEach((item) => (item.disabled = true));
+    avaiableCellsArray.forEach(item => (item.disabled = true));
     startAgain();
     return;
   }
@@ -109,13 +102,13 @@ function movesHandler(e) {
     if (movesArray.length < 3) {
       return false;
     }
-    return winCombinations.some((value) => movesArray.hasAll(value));
+    return winCombinations.some(value => movesArray.hasAll(value));
   }
 
   function startAgain() {
     helpMessage.insertAdjacentHTML(
       'afterEnd',
-      `<button class="proposal_button">${proposalString}</button>`
+      `<button class="proposal_button">${proposalString}</button>`,
     );
     let proposalButton = document.querySelector('.proposal_button');
     proposalButton.focus();
@@ -130,7 +123,18 @@ function movesHandler(e) {
 }
 
 Array.prototype.hasAll = function (testArray) {
-  return testArray.every((item) => this.includes(item));
+  return testArray.every(item => this.includes(item));
 };
 
 initGamefield();
+
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker
+    .register('./sw.js')
+    .then(registration => {
+      console.log('Service worker successfully registered', registration);
+    })
+    .catch(error => {
+      console.log('Service worker registration failed', error);
+    });
+}

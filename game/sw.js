@@ -1,5 +1,5 @@
-const staticCacheName = 'static-cache-v0';
-const dynamicCacheName = 'dynamic-cache-v0';
+const staticCacheName = 'static-cache-v1';
+const dynamicCacheName = 'dynamic-cache-v1';
 
 const staticAssets = [
   './',
@@ -7,7 +7,6 @@ const staticAssets = [
   './icon.png',
   './apple-touch-icon.png',
   './style.css',
-  './app.js',
   './script.js',
 ];
 

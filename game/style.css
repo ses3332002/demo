@@ -85,8 +85,8 @@ main .info .proposal_button {
   margin: 20px auto;
   padding: 10px;
   background-color: #f1e4de;
-  color: #0b7fab;
-  border: 2px solid #0b7fab;
+  color: #085675;
+  border: 2px solid #085675;
   border-radius: 4px;
   font-size: 18px;
 }
@@ -124,9 +124,9 @@ main .info .proposal_button:focus-visible {
   left: 0;
   width: 306px;
   height: 3px;
-  background-color: #0b7fab;
-  -webkit-box-shadow: 0 103px 0px #0b7fab;
-          box-shadow: 0 103px 0px #0b7fab;
+  background-color: #085675;
+  -webkit-box-shadow: 0 103px 0px #085675;
+          box-shadow: 0 103px 0px #085675;
 }
 
 .cells::before {
@@ -136,9 +136,9 @@ main .info .proposal_button:focus-visible {
   left: 100px;
   width: 3px;
   height: 306px;
-  background-color: #0b7fab;
-  -webkit-box-shadow: 103px 0 0px #0b7fab;
-          box-shadow: 103px 0 0px #0b7fab;
+  background-color: #085675;
+  -webkit-box-shadow: 103px 0 0px #085675;
+          box-shadow: 103px 0 0px #085675;
 }
 
 .cells input[type='checkbox'] {
