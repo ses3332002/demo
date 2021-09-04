@@ -74,7 +74,7 @@ function movesHandler(e) {
   let winSign;
   e.target.disabled = true;
   avaiableCellsArray = [...document.querySelectorAll('input[type=checkbox]:not(:disabled)')];
-  navigator.vibrate(200);
+  navigator.vibrate(150);
   if (presentPlayerIsFirst) {
     e.target.nextSibling.classList.add('checked_by_x');
     firstPlayerMoves.push(+e.target.id);
@@ -115,6 +115,7 @@ function movesHandler(e) {
     proposalButton.addEventListener('click', restartGame);
 
     function restartGame() {
+      navigator.vibrate(150);
       proposalButton.removeEventListener('click', restartGame);
       proposalButton.remove();
       initGamefield();
