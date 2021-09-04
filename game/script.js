@@ -74,7 +74,7 @@ function movesHandler(e) {
   let winSign;
   e.target.disabled = true;
   avaiableCellsArray = [...document.querySelectorAll('input[type=checkbox]:not(:disabled)')];
-
+  navigator.vibrate(200);
   if (presentPlayerIsFirst) {
     e.target.nextSibling.classList.add('checked_by_x');
     firstPlayerMoves.push(+e.target.id);
