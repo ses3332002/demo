@@ -4,16 +4,15 @@
 
 <details>
   <summary>
-    <b>Legacy code landing</b>
+    <b>Landing</b>
   </summary>
 
     * Adaptive layout for 3 screen resolutions (desktop, tablet, smartphone);
     * Responsive images;
     * Image optimization for 2x Retina;
-    * Icon font for icons;
-    * Action timer with local storage usage;
+    * Local storage usage for timer;
     * Slider and gallery with support of touch screens;
-    * Dynamic loading of images for the gallery with an AJAX request from a third-party resource;
+    * Dynamic loading of images for the gallery with AJAX request from a third-party resource;
     * Full set of favicons;
     * Legacy code with jQuery and jQuery plugins;
     * Built with Gulp.
@@ -32,11 +31,10 @@
     * Adaptive layout for 3 screen resolutions (desktop, tablet, smartphone);
     * Responsive images;
     * Image optimization for 2x Retina;
-    * Icon font for icons;
     * Slider with support of touch screens;
-    * Dynamic loading weather and currency informers with an AJAX requests from a third-party resources;
+    * Dynamic loading weather and currency informers with AJAX requests from a third-party resources;
     * Full set of favicons;
-    * Dark theme of browser/OS supporting;
+    * Dark scheme of browser/OS supporting;
     * Legacy code with jQuery and jQuery plugins;
     * Built with Gulp.
 
@@ -58,7 +56,6 @@
     * Full set of favicons;
     * Accessebility via keyboard;
     * Themes support by using of CSS variables;
-    * Tiled layout with CSS columns;
     * Built with Gulp.
 
 [Code base](https://github.com/ses3332002/goit/tree/master/demo/demo4)
@@ -74,6 +71,7 @@
 
     * Adaptive layout;
     * Vanilla JS (ES6);
+    * Full set of favicons;
     * Accessebility via keyboard;
     * Themes support by using of CSS variables;
     * Off-line working due to PWA.
@@ -91,6 +89,7 @@
 
       * Adaptive layout;
       * Vanilla JS (ES6);
+      * Dynamic loading data with fetch requests from a third-party resource;
       * Accessebility via keyboard.
 
 [Code base](https://github.com/ses3332002/demo/tree/main/friends)
@@ -106,6 +105,7 @@
 
     * Adaptive layout;
     * Vanilla JS (ES6);
+    * Full set of favicons;
     * Accessebility via keyboard;
     * Off-line working due to PWA.
 
@@ -126,7 +126,7 @@
     * Adaptive layout;
     * Accessebility via keyboard;
     * Multilingual;
-    * Getting single/multi parcel status, requesting of parcel's return via fetch();
+    * Getting single/multi parcel status, requesting of parcel's return via fetch;
     * Local storage usage for fresh data;
     * Built with Parcel.
 
