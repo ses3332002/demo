@@ -1,0 +1,9 @@
+.move_set {
+  background-color: #22cca7;
+}
+
+span {
+  display: inline-block;
+  width: 16px;
+  text-align: center;
+}

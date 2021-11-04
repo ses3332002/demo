@@ -1,13 +1,22 @@
 import React from 'react';
 // import styles from './style';
 
-export default function Header({ gameState }) {
-  let headerString;
+export default function Header({ gameState, setGameState }) {
+  let buttonString;
+
   if (gameState === 'stopped') {
-    headerString = 'Быки и коровы';
-  } else if (gameState === 'playing') {
-    headerString = 'Сделайте ход';
+    return (
+      <header>
+        <button onClick={event => handleEvent()}>Начать игру</button>
+      </header>
+    );
+  } else {
+    return <header></header>;
   }
 
-  return <header>{headerString}</header>;
+  function handleEvent() {
+    if (gameState === 'stopped') {
+      setGameState('playing');
+    }
+  }
 }

@@ -1,17 +1,36 @@
 {
-  "name": "react_game_demo",
-  "version": "0.1",
-  "description": "",
+  "name": "bulls-and-cows",
+  "version": "1.0.0",
+  "description": "Bulls and Cows game demo",
   "main": "index.html",
+  "pwaManifest": {
+    "name": "Bulls and Cows game",
+    "shortName": "Bulls and Cows",
+    "startURL": ".",
+    "theme": "#add8e6",
+    "generateIconOptions": {
+      "baseIcon": "./src/icon.png",
+      "formats": {
+        "png": "png"
+      },
+      "sizes": [
+        144,
+        192,
+        384,
+        512
+      ],
+      "genFavicons": true
+    }
+  },
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel src/index.html --open --no-source-maps",
     "lint:js": "npx eslint --cache .",
     "lint:js:fix": "npm run lint:js -- --fix",
     "prettify": "npx prettier --write \"**/*.{js,css,md,html}\"",
     "lint": "npm run lint:js:fix && npm run prettify",
     "lint:staged": "npx lint-staged",
     "prebuild": "shx rm -rf dist/*",
-    "build": "parcel build src/index.html --public-url ./",
+    "build": "parcel build src/index.html --no-source-maps --public-url ./ && npx workbox generateSW workbox-config.js",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [],
@@ -30,13 +49,16 @@
     "eslint-plugin-prettier": "^3.3.1",
     "gh-pages": "^3.1.0",
     "lint-staged": "^10.5.4",
-    "parcel-bundler": "1.12.3",
+    "parcel-bundler": "1.12.5",
+    "parcel-plugin-clean-easy": "^1.0.2",
     "parcel-plugin-imagemin": "^4.0.2",
+    "parcel-plugin-pwa-manifest": "^3.0.10",
     "postcss-modules": "^3.2.2",
     "pre-commit": "^1.2.2",
     "prettier": "^2.2.1",
     "sass": "^1.32.11",
-    "shx": "^0.3.3"
+    "shx": "^0.3.3",
+    "workbox-cli": "^6.3.0"
   },
   "babel": {
     "plugins": [
@@ -74,9 +96,9 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-select": "^4.3.1"
-  }
+  },
+  "parcelCleanPaths": [
+    "dist",
+    ".cache"
+  ]
 }
-
-
-
-
