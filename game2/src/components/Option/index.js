@@ -1,10 +1,18 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 import styles from './style';
 
-export default function Option() {
+export default function Option({ isSubmited }) {
+  let [selectorValue, setSelectorValue] = useState('0');
+  useEffect(() => setSelectorValue('0'), [isSubmited]);
+
   return (
-    <select defaultValue="0">
+    <select
+      value={selectorValue}
+      onChange={e => {
+        setSelectorValue(e.target.value);
+      }}
+    >
       <option value="0" disabled>
         ⬇️
       </option>

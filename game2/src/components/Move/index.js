@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import Option from '../Option';
+import React from 'react';
 import Result from '../Result';
 import styles from './style';
 

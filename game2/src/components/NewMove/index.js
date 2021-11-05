@@ -1,9 +1,13 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Option from '../Option';
+import Button from '../Button';
 import styles from './style';
 
-export default function NewMove({ gameCombination, moves, setMoves }) {
+export default function NewMove({ gameCombination, moves, setMoves, gameState, setGameState }) {
   let [isSubmited, setIsSubmited] = useState(false);
+  let [isDone, setIsDone] = useState(false);
+
+  useEffect(() => setIsSubmited(false));
 
   function submitMove(e) {
     e.preventDefault();
@@ -15,23 +19,28 @@ export default function NewMove({ gameCombination, moves, setMoves }) {
       currentMove += e.target[i].value;
     }
     if (gameCombination === Number(currentMove)) {
-      console.log('you win');
-    } else {
-      console.log('move submited');
-      setIsSubmited(true);
-      setMoves([...moves, Number(currentMove)]);
+      setIsDone(true);
     }
+    setMoves([...moves, Number(currentMove)]);
+    setIsSubmited(true);
   }
 
-  return (
-    <>
-      <form className={styles.move_set} onSubmit={e => submitMove(e)}>
-        <Option key={1} />
-        <Option key={2} />
-        <Option key={3} />
-        <Option key={4} />
+  if (isDone) {
+    return (
+      <div>
+        Вы выиграли за {moves.length} хода(ов)
+        <Button gameState={gameState} setGameState={setGameState} />
+      </div>
+    );
+  } else {
+    return (
+      <form className={styles.move_set} autoComplete="off" onSubmit={e => submitMove(e)}>
+        <Option key={1} isSubmited={isSubmited} setIsSubmited={setIsSubmited} />
+        <Option key={2} isSubmited={isSubmited} setIsSubmited={setIsSubmited} />
+        <Option key={3} isSubmited={isSubmited} setIsSubmited={setIsSubmited} />
+        <Option key={4} isSubmited={isSubmited} setIsSubmited={setIsSubmited} />
         <button>Проверить</button>
       </form>
-    </>
-  );
+    );
+  }
 }
