@@ -1,9 +1,16 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Move from '../Move';
 import NewMove from '../NewMove';
 
-export default function Gamefield({ gameState, setGameState, gameCombination }) {
-  let [moves, setMoves] = useState([]);
+export default function Gamefield({
+  isPlaying,
+  setIsPlaying,
+  gameCombination,
+  moves,
+  setMoves,
+  gameId,
+  setGameId,
+}) {
   return (
     <>
       {moves.map((item, index) => {
@@ -13,8 +20,10 @@ export default function Gamefield({ gameState, setGameState, gameCombination }) 
         gameCombination={gameCombination}
         moves={moves}
         setMoves={setMoves}
-        gameState={gameState}
-        setGameState={setGameState}
+        isPlaying={isPlaying}
+        setIsPlaying={setIsPlaying}
+        gameId={gameId}
+        setGameId={setGameId}
       />
     </>
   );

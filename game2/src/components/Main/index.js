@@ -1,33 +1,32 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import Footer from '../Footer';
 import Gamefield from '../Gamefield';
+import Header from '../Header';
 // import styles from './style';
 
-export default function Main({ gameState, setGameState }) {
-  if (gameState === 'stopped') {
-    return <main></main>;
-  } else {
-    let gameCombination = generateCombination();
-    return (
+export default function Main({ gameCombination, gameId, setGameId }) {
+  let [moves, setMoves] = useState([]);
+  let [isPlaying, setIsPlaying] = useState(true);
+  useEffect(() => {
+    setMoves([]);
+    setIsPlaying(true);
+  }, [gameId]);
+
+  return (
+    <>
+      <Header isPlaying={isPlaying} />
       <main>
         <Gamefield
-          gameState={gameState}
-          setGameState={setGameState}
+          isPlaying={isPlaying}
+          setIsPlaying={setIsPlaying}
           gameCombination={gameCombination}
+          moves={moves}
+          setMoves={setMoves}
+          gameId={gameId}
+          setGameId={setGameId}
         />
       </main>
-    );
-  }
-
-  function generateCombination() {
-    const [min, max] = [1, 9];
-    let combination = '';
-    for (let i = 0; i < 4; i++) {
-      let digit;
-      do {
-        digit = Math.floor(min + Math.random() * max) + '';
-      } while (combination.includes(digit.toString()));
-      combination += digit;
-    }
-    return +combination;
-  }
+      <Footer moves={moves} />
+    </>
+  );
 }

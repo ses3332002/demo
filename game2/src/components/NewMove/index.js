@@ -3,9 +3,20 @@ import Option from '../Option';
 import Button from '../Button';
 import styles from './style';
 
-export default function NewMove({ gameCombination, moves, setMoves, gameState, setGameState }) {
+export default function NewMove({
+  gameCombination,
+  moves,
+  setMoves,
+  isPlaying,
+  setIsPlaying,
+  gameId,
+  setGameId,
+}) {
   let [isSubmited, setIsSubmited] = useState(false);
   let [isDone, setIsDone] = useState(false);
+  useEffect(() => {
+    setIsDone(false);
+  }, [gameId]);
 
   useEffect(() => setIsSubmited(false));
 
@@ -20,6 +31,7 @@ export default function NewMove({ gameCombination, moves, setMoves, gameState, s
     }
     if (gameCombination === Number(currentMove)) {
       setIsDone(true);
+      setIsPlaying(false);
     }
     setMoves([...moves, Number(currentMove)]);
     setIsSubmited(true);
@@ -29,7 +41,7 @@ export default function NewMove({ gameCombination, moves, setMoves, gameState, s
     return (
       <div>
         Вы выиграли за {moves.length} хода(ов)
-        <Button gameState={gameState} setGameState={setGameState} />
+        <Button gameId={gameId} setGameId={setGameId} />
       </div>
     );
   } else {
