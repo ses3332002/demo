@@ -7,7 +7,6 @@ export default function NewMove({
   gameCombination,
   moves,
   setMoves,
-  isPlaying,
   setIsPlaying,
   gameId,
   setGameId,
@@ -39,8 +38,8 @@ export default function NewMove({
 
   if (isDone) {
     return (
-      <div>
-        Вы выиграли за {moves.length} хода(ов)
+      <div className={styles.form_result}>
+        <div className={styles.form_message}>Вы выиграли за {moves.length} хода(ов)</div>
         <Button gameId={gameId} setGameId={setGameId} />
       </div>
     );
@@ -51,7 +50,7 @@ export default function NewMove({
         <Option key={2} isSubmited={isSubmited} setIsSubmited={setIsSubmited} />
         <Option key={3} isSubmited={isSubmited} setIsSubmited={setIsSubmited} />
         <Option key={4} isSubmited={isSubmited} setIsSubmited={setIsSubmited} />
-        <button>Проверить</button>
+        <button className={styles.check_button}>Проверить</button>
       </form>
     );
   }

@@ -3,7 +3,6 @@ import Move from '../Move';
 import NewMove from '../NewMove';
 
 export default function Gamefield({
-  isPlaying,
   setIsPlaying,
   gameCombination,
   moves,
@@ -20,7 +19,6 @@ export default function Gamefield({
         gameCombination={gameCombination}
         moves={moves}
         setMoves={setMoves}
-        isPlaying={isPlaying}
         setIsPlaying={setIsPlaying}
         gameId={gameId}
         setGameId={setGameId}

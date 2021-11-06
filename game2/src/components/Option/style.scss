@@ -2,50 +2,20 @@ option {
   height: 30px;
   padding: 4px;
   text-align: center;
-  // position: relative;
 
   &:first-of-type {
     display: none;
   }
-  // &:nth-of-type(2)::after {
-  // }
-
-  // span {
-  //   background-color: hotpink;
-  //   color: white;
-  //   font-size: 15px;
-  // }
 }
 
-// .custom_select {
-//   position: relative;
-//   display: inline-block;
-// }
-
-// .custom_select::after {
-//   position: absolute;
-//   top: 3px;
-//   left: 10px;
-//   content: '\/';
-//   width: 40px;
-//   height: 40px;
-//   border-radius: 50%;
-//   z-index: 5;
-//   pointer-events: none;
-// }
-
 select {
-  height: 30px;
-  width: 30px;
+  height: 36px;
+  width: 36px;
   padding: 4px;
   margin: 0;
   border: none;
   box-sizing: border-box;
   appearance: none;
-  background-color: rgba(25, 255, 64, 0.945);
   text-align: center;
-  // color: rgb(120, 203, 209);
+  font-size: 22px;
 }
-
-// select::after {
-// }

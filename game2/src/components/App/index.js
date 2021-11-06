@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 import Main from '../Main';
 
-// import styles from './style';
+import styles from './style';
 
 export default function App() {
   let gameCombination = generateCombination();

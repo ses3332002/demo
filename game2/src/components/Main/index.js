@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Footer from '../Footer';
 import Gamefield from '../Gamefield';
 import Header from '../Header';
-// import styles from './style';
+import styles from './style';
 
 export default function Main({ gameCombination, gameId, setGameId }) {
   let [moves, setMoves] = useState([]);
@@ -15,9 +15,8 @@ export default function Main({ gameCombination, gameId, setGameId }) {
   return (
     <>
       <Header isPlaying={isPlaying} />
-      <main>
+      <main className={styles.main}>
         <Gamefield
-          isPlaying={isPlaying}
           setIsPlaying={setIsPlaying}
           gameCombination={gameCombination}
           moves={moves}
