@@ -1,8 +1,9 @@
 import React from 'react';
+
 import Result from '../Result';
 import styles from './style';
 
-export default function Move({ moveCombination, gameCombination }) {
+export default function Move({ moveCombination }) {
   return (
     <div className={styles.move_set}>
       <div className={styles.move}>
@@ -19,7 +20,7 @@ export default function Move({ moveCombination, gameCombination }) {
           {moveCombination.toString().at(3)}
         </span>
       </div>
-      <Result moveCombination={moveCombination} gameCombination={gameCombination} />
+      <Result moveCombination={moveCombination} />
     </div>
   );
 }

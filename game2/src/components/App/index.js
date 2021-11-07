@@ -1,16 +1,23 @@
-import React, { useState } from 'react';
-
+import React, { useState, createContext } from 'react';
 import Main from '../Main';
 
 import styles from './style';
+
+export let GameContext = createContext(null);
 
 export default function App() {
   let gameCombination = generateCombination();
   let [gameId, setGameId] = useState(1);
   return (
-    <>
-      <Main gameCombination={gameCombination} gameId={gameId} setGameId={setGameId} />
-    </>
+    <GameContext.Provider
+      value={{
+        gameId,
+        setGameId,
+        gameCombination,
+      }}
+    >
+      <Main />
+    </GameContext.Provider>
   );
 
   function generateCombination() {

@@ -24,10 +24,22 @@ button {
     background-color: $sitecolor4;
     color: $sitecolor2;
   }
+
+  &:focus-visible {
+    outline: 2px solid $sitecolor4;
+    outline-offset: 4px;
+    z-index: 2;
+  }
 }
 
 select {
   background-color: $sitecolor2;
+
+  &:focus-visible {
+    outline: 2px solid $sitecolor4;
+    outline-offset: 2px;
+    z-index: 2;
+  }
 
   option {
     background-color: $sitecolor3;

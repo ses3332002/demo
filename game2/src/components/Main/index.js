@@ -1,10 +1,12 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
+import { GameContext } from '../App';
 import Footer from '../Footer';
 import Gamefield from '../Gamefield';
 import Header from '../Header';
 import styles from './style';
 
-export default function Main({ gameCombination, gameId, setGameId }) {
+export default function Main() {
+  let { gameId } = useContext(GameContext);
   let [moves, setMoves] = useState([]);
   let [isPlaying, setIsPlaying] = useState(true);
   useEffect(() => {
@@ -16,14 +18,7 @@ export default function Main({ gameCombination, gameId, setGameId }) {
     <>
       <Header isPlaying={isPlaying} />
       <main className={styles.main}>
-        <Gamefield
-          setIsPlaying={setIsPlaying}
-          gameCombination={gameCombination}
-          moves={moves}
-          setMoves={setMoves}
-          gameId={gameId}
-          setGameId={setGameId}
-        />
+        <Gamefield setIsPlaying={setIsPlaying} moves={moves} setMoves={setMoves} />
       </main>
       <Footer moves={moves} />
     </>

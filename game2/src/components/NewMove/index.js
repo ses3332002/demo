@@ -1,18 +1,13 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import Option from '../Option';
 import Button from '../Button';
 import styles from './style';
+import { GameContext } from '../App';
 
-export default function NewMove({
-  gameCombination,
-  moves,
-  setMoves,
-  setIsPlaying,
-  gameId,
-  setGameId,
-}) {
+export default function NewMove({ moves, setMoves, setIsPlaying }) {
   let [isSubmited, setIsSubmited] = useState(false);
   let [isDone, setIsDone] = useState(false);
+  let { gameCombination, gameId } = useContext(GameContext);
   useEffect(() => {
     setIsDone(false);
   }, [gameId]);
@@ -40,7 +35,7 @@ export default function NewMove({
     return (
       <div className={styles.form_result}>
         <div className={styles.form_message}>Вы выиграли за {moves.length} хода(ов)</div>
-        <Button gameId={gameId} setGameId={setGameId} />
+        <Button />
       </div>
     );
   } else {

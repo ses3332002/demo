@@ -1,21 +1,20 @@
-option {
-  height: 30px;
-  padding: 4px;
-  text-align: center;
-
-  &:first-of-type {
-    display: none;
-  }
-}
-
 select {
   height: 36px;
-  width: 36px;
-  padding: 4px;
-  margin: 0;
+  width: 32px;
+  padding: 2px;
+  margin: 2px;
   border: none;
   box-sizing: border-box;
   appearance: none;
   text-align: center;
   font-size: 22px;
+}
+
+option {
+  height: 30px;
+  text-align: center;
+
+  &:first-of-type {
+    display: none;
+  }
 }

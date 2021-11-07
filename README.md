@@ -135,3 +135,20 @@
 [Demo](https://ses3332002.github.io/framework_task/)
 
 </details>
+
+<details>
+  <summary>
+    <b>Bulls and cows game (PWA)</b>
+  </summary>
+
+    * React (with functional components);
+    * Adaptive layout;
+    * Accessebility via keyboard;
+    * Off-line working due to PWA;
+    * Built with Parcel and Workbox.
+
+[Code base](https://github.com/ses3332002/framework_task)
+
+[Demo](https://ses3332002.github.io/framework_task/)
+
+</details>
