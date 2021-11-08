@@ -23,6 +23,7 @@ export default function NewMove({ moves, setMoves, setIsPlaying }) {
       }
       currentMove += e.target[i].value;
     }
+    navigator.vibrate(150);
     if (gameCombination === Number(currentMove)) {
       setIsDone(true);
       setIsPlaying(false);

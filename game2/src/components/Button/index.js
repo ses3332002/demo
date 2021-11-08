@@ -6,6 +6,7 @@ export default function Button() {
   return <button onClick={() => handleEvent()}>Новая игра</button>;
 
   function handleEvent() {
+    navigator.vibrate(150);
     setGameId(gameId => {
       return gameId + 1;
     });
