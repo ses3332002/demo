@@ -13,7 +13,6 @@
     * Local storage usage for timer;
     * Slider and gallery with support of touch screens;
     * Dynamic loading of images for the gallery with AJAX request from a third-party resource;
-    * Full set of favicons;
     * Legacy code with jQuery and jQuery plugins;
     * Built with Gulp.
 
@@ -33,7 +32,6 @@
     * Image optimization for 2x Retina;
     * Slider with support of touch screens;
     * Dynamic loading weather and currency informers with AJAX requests from a third-party resources;
-    * Full set of favicons;
     * Dark scheme of browser/OS supporting;
     * Legacy code with jQuery and jQuery plugins;
     * Built with Gulp.
@@ -53,7 +51,6 @@
 
     * Adaptive layout;
     * Vanilla JS (ES6);
-    * Full set of favicons;
     * Accessebility via keyboard;
     * Themes support by using of CSS variables;
     * Built with Gulp.
@@ -71,7 +68,6 @@
 
     * Adaptive layout;
     * Vanilla JS (ES6);
-    * Full set of favicons;
     * Accessebility via keyboard;
     * Themes support by using of CSS variables;
     * Off-line working due to PWA.
@@ -105,7 +101,6 @@
 
     * Adaptive layout;
     * Vanilla JS (ES6);
-    * Full set of favicons;
     * Accessebility via keyboard;
     * Off-line working due to PWA.
 
@@ -147,8 +142,8 @@
     * Off-line working due to PWA;
     * Built with Parcel and Workbox.
 
-[Code base](https://github.com/ses3332002/framework_task)
+[Code base](https://github.com/ses3332002/demo/tree/main/game2/src)
 
-[Demo](https://ses3332002.github.io/framework_task/)
+[Demo](https://ses3332002.github.io/demo/game2/dist/)
 
 </details>
