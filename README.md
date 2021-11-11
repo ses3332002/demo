@@ -125,7 +125,7 @@
     * Local storage usage for fresh data;
     * Built with Parcel.
 
-[Code base](https://github.com/ses3332002/framework_task)
+[Code base](https://github.com/ses3332002/framework_task/tree/react-full)
 
 [Demo](https://ses3332002.github.io/framework_task/)
 
@@ -142,7 +142,7 @@
     * Off-line working due to PWA;
     * Built with Parcel and Workbox.
 
-[Code base](https://github.com/ses3332002/demo/tree/main/game2/src)
+[Code base](https://github.com/ses3332002/demo/tree/main/game2)
 
 [Demo](https://ses3332002.github.io/demo/game2/dist/)
 
